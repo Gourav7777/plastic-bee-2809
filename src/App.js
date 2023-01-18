@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Navbar from './Components/Navbar';
+import Allroutes from './Components/Allroutes';
+import Imagecarousel from './Components/First_Slider/Imagecarousel';
+import SliderComp from './Components/Second-slider/SliderComp';
+import Side from './Components/First_Slider/Side';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Navbar></Navbar>
+      <Allroutes></Allroutes>
+
+    
+      <Imagecarousel></Imagecarousel>
+
+<div style={{display:"flex", gap:"25px"    }}>
+      <Side></Side>
+      <SliderComp></SliderComp>
+</div>
+     </div>
+
+    
   );
 }
 
