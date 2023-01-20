@@ -1,8 +1,12 @@
 import React from 'react'
-
+import Sidebar from './Mens/Sidebar'
 const Men = () => {
   return (
-    <div>Men</div>
+    <div>
+
+   <Sidebar></Sidebar>
+
+    </div>
   )
 }
 
