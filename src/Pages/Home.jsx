@@ -8,7 +8,7 @@ import Side from '../Components/First_Slider/Side';
 import ThirdSlider from '../Components/Third_Slider/SliderComp';
 import Sid from '../Components/Third_Slider/sid';
 import Heading from '../Components/Heading Slider/heading';
-import AboveFooter from '../Components/AboveFooter';
+
 const Home = () => {
   return (
          <>
@@ -33,7 +33,7 @@ const Home = () => {
     <FourImages></FourImages>
     <EightLogo></EightLogo>
      <Twoguys></Twoguys>
-     <AboveFooter></AboveFooter>
+    
      <Footer></Footer>
       <br></br>
       <br></br>
