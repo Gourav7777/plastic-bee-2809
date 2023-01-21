@@ -8,11 +8,11 @@ import Side from '../Components/First_Slider/Side';
 import ThirdSlider from '../Components/Third_Slider/SliderComp';
 import Sid from '../Components/Third_Slider/sid';
 import Heading from '../Components/Heading Slider/heading';
-
+import Background from '../Components/background';
 const Home = () => {
   return (
          <>
-
+   <Background></Background>
      <div style={{display:"flex", gap:"25px"    }}>
       <Side></Side>
       <SliderComp></SliderComp>

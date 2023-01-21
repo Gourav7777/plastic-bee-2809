@@ -4,6 +4,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {Flex} from "@chakra-ui/react"
 import {SearchIcon,ChatIcon,PhoneIcon,QuestionOutlineIcon,HamburgerIcon} from "@chakra-ui/icons"
+
 const Navbar = () => {
 
 
@@ -20,12 +21,7 @@ const Navbar = () => {
 
 
 
-      <Flex direction={{
-        base:"column",
-        sm:"row",
-        
-
-      }} justifyContent={"center"} alignItems={"center"}  gap={"8"}  >
+      <Flex  justifyContent={"space-around"} alignItems={"center"}  gap={"8"}  >
 
    
     <Flex justifyContent={"space-evenly"} fontSize={16}  fontWeight={"bold"} gap={"5"}  >
@@ -34,7 +30,7 @@ const Navbar = () => {
       <Link to="/men" >MEN</Link>
       <Link to="/women" >WOMEN</Link>
       <Link to="/kid" >KID</Link>
-      <Link to="/sports" style={{border:"1px solid #ff0000",color:"#ff0000",padding:"2px",marginTop:"-2px"}}  >SPORTS</Link>
+      <Link to="/login" style={{border:"1px solid #ff0000",color:"#ff0000",padding:"2px",marginTop:"-2px"}}  >Login</Link>
 
     </Flex>
      
@@ -70,13 +66,13 @@ const Navbar = () => {
 
      <br></br>
 
-      <div style={{backgroundImage:`url("https://diesel.gumlet.io/banner/1672927619Banner_d.webp?compress=true&q=70")`,width:"100%",height:"590px",border:"0px solid black"}}  >
+      {/* <div style={{backgroundImage:`url("https://diesel.gumlet.io/banner/1672927619Banner_d.webp?compress=true&q=70")`,width:"100%",height:"590px",border:"0px solid black"}}  >
 
       
 
-      </div>
+      </div> */}
 
-
+     {/* <Background></Background> */}
 
     </>
   )
