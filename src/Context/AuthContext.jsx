@@ -1,9 +1,37 @@
 import React from 'react'
 
-const AuthContext = () => {
-  return (
-    <div>AuthContext</div>
-  )
+export const AuthContext= React.createContext()
+
+
+function AuthContextProvider({children}) {
+
+ const [isAuth,setisAuth] = React.useState(false)
+
+
+ const login =(val)=>{
+ 
+ setisAuth(true)
+
+
+ }
+const logout =()=>{
+
+    setisAuth(false)
+    
+    
+ }
+    return(
+
+   <AuthContext.Provider value={{login,logout,isAuth}} >
+
+   {children}
+   </AuthContext.Provider>
+
+
+    )
+
+
+
 }
 
-export default AuthContext
+export default AuthContextProvider;
