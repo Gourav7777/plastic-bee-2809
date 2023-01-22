@@ -1,8 +1,10 @@
 import React from 'react'
-
+import WomenSidebar from './Women/WomenSidebar'
 const Women = () => {
   return (
-    <div>Women</div>
+    <div>
+      <WomenSidebar></WomenSidebar>
+      </div>
   )
 }
 
