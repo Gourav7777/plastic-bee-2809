@@ -1,9 +1,8 @@
-
 import React from "react";
-import ProductItem from "./ProductItem";
+import WomenItem from "./Womenitem";
 import axios from "axios"
 
-const ProductList = ({products=[]}) => {
+const WomenList = ({products=[]}) => {
   console.log(products)
   
  
@@ -26,7 +25,7 @@ const ProductList = ({products=[]}) => {
       
       return(
         
-        <ProductItem  AddtoCart={AddtoCart} el={el}  />
+        <WomenItem  AddtoCart={AddtoCart} el={el}  />
         
         )
     })}
@@ -35,4 +34,4 @@ const ProductList = ({products=[]}) => {
 };
 
 
-export default ProductList;
+export default WomenList;

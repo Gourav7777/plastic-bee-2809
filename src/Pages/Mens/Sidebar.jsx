@@ -2,7 +2,7 @@ import React from 'react'
 import Mensdata from './Mensdata'
 
 import { AuthContext } from '../../Context/AuthContext'
-import Loader from './Loader'
+
 const Sidebar = () => {
 
    const [sort,setSort] = React.useState("")
@@ -28,7 +28,7 @@ const Sidebar = () => {
      
 
      <select style={{backgroundColor:"#38a169",color:"white",fontSize:"18px",padding:"10px",borderRadius:"10px"}} onChange={(e)=> setType(e.target.value) }   >
-     <option   >Filter By Category</option>
+     <option  value="" >Filter By Category</option>
      <option value="jeans" >Pants</option>
      <option value="accessories">Accessories</option>
      <option value="tshirt">Shirts</option>
@@ -70,7 +70,7 @@ const Sidebar = () => {
       <br>
       </br>
     
-   { !isAuth? <Loader /> :  <Mensdata  sort={sort} type={type}  />}
+   {   <Mensdata  sort={sort} type={type}  />}
    
     
 

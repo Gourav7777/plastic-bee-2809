@@ -1,80 +1,54 @@
-import React from 'react'
+import React from "react";
 
-
-// import { AuthContext } from "../Context/AuthContext";
-// import React from "react";
-// import ProductList from "../Components/ProductList";
-// import Pagination from "../Components/Pagination";
-import ProductList from './ProductList'
-
+import ProductList from "./ProductList";
+import Loader from "./Loader";
 
 const Mensdata = (props) => {
+  const [load, setLoad] = React.useState(false);
+  const [data, setData] = React.useState([]);
 
-    const [data,setData] = React.useState([])
-    // let {login,logout,isAuth} = React.useContext(AuthContext)
-   
-    const [current,setCurrent] = React.useState(1)
-    const [totalPage,settotalPage]= React.useState(0)
-    
-   
-    
-  
-   const {sort,type} = props
-    
-    // const onchange=(val)=>{
-    //   setCurrent(current+val)
-  
-    // }
-  
-    React.useEffect(()=>{
-  
-    fetchData(sort)
-  
-    },[sort])
-  
-   const fetchData=async(sort)=>{
-       let url = `http://localhost:8000/men`
-    if(sort){
-      url=`http://localhost:8000/men?_sort=price&_order=${sort}`
+  const [current, setCurrent] = React.useState(1);
+  const [totalPage, settotalPage] = React.useState(0);
+
+  const { sort, type } = props;
+
+  React.useEffect(() => {
+    fetchData(sort, type);
+  }, [sort, type]);
+
+  const fetchData = async (sort, type) => {
+    setLoad(true);
+    let url ;
+    if (sort) {
+      url = `http://localhost:8000/men?_sort=price&_order=${sort}`;
     }
-    if(type){
-        url=`http://localhost:8000/men?title=${type}`
+   else if (type) {
+      url = `http://localhost:8000/men?type=${type}`;
     }
-    // let url = `http://localhost:8000/men?page=${current}&limit=10&order=${sort}&sort=price`
+   else if(type&&sort){
+      url=`http://localhost:8000/men?_sort=price&_order=${sort}&type=${type}`
+  }
+
+  else{
+    url=`http://localhost:8000/men`
+  }
+   
     try {
-      
-      let res = await fetch(url)
-      
-      res = await res.json()
-    //   console.log(res)
-      setData(res)
-      
+      let res = await fetch(url);
+
+      res = await res.json();
+
+      setData(res);
+      setLoad(false);
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
-   }
+  };
 
-
-
-console.log(sort,type)
+  console.log(sort, type);
   return (
-    <div>
+    <div>{load ? <Loader></Loader> : <ProductList products={data} />}</div>
+  );
+};
 
-
-
-               <ProductList products={data}  />
-     
-      {/* add Pagination component  */}
-  
-  {/* <Pagination current={current} totalPage={totalPage} onchange={onchange} /> */}
-
-    {/* //   <div style={{ display: "flex", justifyContent: "center" }}>
-       
-    //   </div> */}
-
-     </div>
-
-  )
-}
-
-export default Mensdata
+export default Mensdata;
