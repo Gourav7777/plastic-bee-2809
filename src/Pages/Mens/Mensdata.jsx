@@ -20,17 +20,17 @@ const Mensdata = (props) => {
     setLoad(true);
     let url ;
     if (sort) {
-      url = `http://localhost:8000/men?_sort=price&_order=${sort}`;
+      url = `https://misty-tie-boa.cyclic.app/men?_sort=price&_order=${sort}`;
     }
    else if (type) {
-      url = `http://localhost:8000/men?type=${type}`;
+      url = `https://misty-tie-boa.cyclic.app/men?type=${type}`;
     }
    else if(type&&sort){
-      url=`http://localhost:8000/men?_sort=price&_order=${sort}&type=${type}`
+      url=`https://misty-tie-boa.cyclic.app/men?_sort=price&_order=${sort}&type=${type}`
   }
 
   else{
-    url=`http://localhost:8000/men`
+    url=`https://misty-tie-boa.cyclic.app/men`
   }
    
     try {
