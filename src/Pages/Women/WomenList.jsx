@@ -10,7 +10,7 @@ const WomenList = ({products=[]}) => {
 
      let res = await     axios({
         method:"post",
-        url:`http://localhost:8000/shoppingCart`,
+        url:`https://misty-tie-boa.cyclic.app/shoppingCart`,
         data: obj
      })
    

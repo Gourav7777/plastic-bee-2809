@@ -18,16 +18,16 @@ const Womendata = (props) => {
 
   const fetchData = async (sort, type) => {
     setLoad(true);
-    let url = `http://localhost:8000/women`;
+    let url = `https://misty-tie-boa.cyclic.app/women`;
     if (sort) {
-      url = `http://localhost:8000/women?_sort=price&_order=${sort}`;
+      url = `https://misty-tie-boa.cyclic.app/women?_sort=price&_order=${sort}`;
     }
     if (type) {
-      url = `http://localhost:8000/women?type=${type}`;
+      url = `https://misty-tie-boa.cyclic.app/women?type=${type}`;
     }
    
     if(type&&sort){
-        url=`http://localhost:8000/women?_sort=price&_order=${sort}&type=${type}`
+        url=`https://misty-tie-boa.cyclic.app/women?_sort=price&_order=${sort}&type=${type}`
     }
     try {
       let res = await fetch(url);

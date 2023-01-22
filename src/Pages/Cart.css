@@ -1,0 +1,15 @@
+.car  {
+    border: none;
+    /* outline: 0; */
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+  }
+  
+  .car :hover {
+    opacity: 0.7;
+  }
