@@ -39,7 +39,6 @@
 - React.js
 - JavaScript
 - Chakra Ui
-- JSX
 - CSS
 - Git & GitHub
 
