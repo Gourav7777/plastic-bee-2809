@@ -1,5 +1,4 @@
 # plastic-bee-2809
-<img src="https://user-images.githubusercontent.com/112845916/221432286-98300753-7265-403a-b437-e57567d429ff.png"/>
 
 # Diesel
 
@@ -9,16 +8,23 @@
 > Diesel application was built during the construct week at [Masai School](https://masaischool.com/). I completed the project in four days 
 # Screenshots
 # Homepage
-![Screenshot (145)](https://user-images.githubusercontent.com/112845916/221496830-378aef53-138f-41ae-bf32-152d0ab1badf.png)
+![Screenshot (86)](https://user-images.githubusercontent.com/112867470/229464231-35efe3b8-5de6-463c-86b7-50a84be011d7.png)
+
+
+![Screenshot (90)](https://user-images.githubusercontent.com/112867470/229464370-9d274516-3b50-4edf-9231-66ecde85b9ca.png)
 
 # Products Page
-![Screenshot (150)](https://user-images.githubusercontent.com/112845916/221497075-50069191-54ad-4648-b2db-faa00da16673.png)
 
-# Cart Page
-![Screenshot (146)](https://user-images.githubusercontent.com/112845916/221497175-daecbf60-65df-4903-80ae-a08b927ef908.png)
+![Screenshot (89)](https://user-images.githubusercontent.com/112867470/229464666-fbeaaa89-c7b6-4b25-89e9-5924604689d4.png)
 
-# Payments Page
-![Screenshot (149)](https://user-images.githubusercontent.com/112845916/221497372-201c8b18-a30a-451b-85e5-ee7b2f2a4a1b.png)
+![Screenshot (88)](https://user-images.githubusercontent.com/112867470/229464857-5fa2ba41-f3ef-44db-bde6-90c16c7604f2.png)
+
+
+# Other Page
+
+
+
+![Screenshot (91)](https://user-images.githubusercontent.com/112867470/229465226-f28947c2-9f28-4b8c-b019-1b9b50eeefb8.png)
 
 
 
